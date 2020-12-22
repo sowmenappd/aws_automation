@@ -19,3 +19,14 @@ $ ./enable_versioning.sh automate-tasks [Enabled|Suspended]
 ```
 
 Upon success, it will return the current status of versioning control for the contextual bucket.
+
+## Delete file bash script
+
+---
+
+This command line script can be called to delete a file from the bucket, both of which are specified as command line arguments.
+
+```sh
+$ #!/bin/sh
+$ ./delete_file.sh BUCKET_NAME OBJECT_KEY
+```
