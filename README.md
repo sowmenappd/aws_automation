@@ -3,8 +3,11 @@
 ## Following are some of the scripts that were enlisted as tasks:
 
 > Set versioning status of a bucket (Toggle between enabled and suspended)
+
 > Delete a file from the bucket
+
 > Download a deleted file from the bucket
+
 > Host a static website from the bucket
 
 ## Versioning toggle bash script for bucket
@@ -29,4 +32,15 @@ This command line script can be called to delete a file from the bucket, both of
 ```sh
 $ #!/bin/sh
 $ ./delete_file.sh BUCKET_NAME OBJECT_KEY
+```
+
+## Retrieve deleted file from S3 bash script
+
+---
+
+This command line script can be called to get a file that was deleted from a version control enabled bucket. Command line arguments include the bucket name, the object key and the version id of the deleted object.
+
+```sh
+$ #!/bin/sh
+$ ./get_deleted_object.sh BUCKET_NAME OBJECT_KEY VERSION_ID [OUTPUT_FILENAME]
 ```
