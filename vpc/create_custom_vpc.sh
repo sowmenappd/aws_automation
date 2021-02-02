@@ -1,1 +1,1 @@
-aws ec2 create-vpc --cidr-block $1
+aws ec2 create-vpc --cidr-block $1 --tag-specifications 'ResourceType=vpc,Tags={Key=Name,Value='$2'}'
